@@ -17,7 +17,7 @@ function Clock() {
   const [time, setTime] = useState(new Date())
   
   useEffect(() => {
-    let id = setInterval(tick);
+    let id = setInterval(tick, 1000);
 
     return () => {
       console.log('Clearning Clock interval!')
